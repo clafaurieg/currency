@@ -23,7 +23,6 @@ readMoreBtn.addEventListener("click", function(e){
     readMoreBtn.innerText = "Read More";
   }
 })
-
 const currencyEl_one = document.getElementById('currency-one');
 const currencyEl_two = document.getElementById('currency-two');
 const amountEl_one = document.getElementById('amount-one');
@@ -37,7 +36,7 @@ function calculate() {
   const currency_one = currencyEl_one.value;
   const currency_two = currencyEl_two.value;
 
-  fetch(`https://v6.exchangerate-api.com/v6/b71ba5a6f69833fe3ac900ec/latest/${currency_one}`)
+  fetch(`https://v6.exchangerate-api.com/v6/6d7fdfaf4490b6cd52360f33/latest/${currency_one}`)
     .then((res) => res.json())
     .then((data) => {
       //   console.log(data);
